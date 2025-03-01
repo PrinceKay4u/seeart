@@ -2,24 +2,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>See Art Now</title>
+    <title>Send Feedback</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid">
-          <a class="navbar-brand text-danger" href="index.html">See Art Now</a>
+          <a class="navbar-brand text-danger linknav" href="index.html">See Art Now</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header" aria-controls="header" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="header">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active text-danger" aria-current="page" href="login.html">Login</a>
+                <a class="nav-link active text-danger linknav" aria-current="page" href="login.html">Login</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-danger" href="login.html">Register</a>
+                <a class="nav-link text-danger linknav" href="login.html">Register</a>
               </li>
              </ul>
             <form class="d-flex" role="search">
@@ -31,15 +31,26 @@
     </nav>
       <div class="container-fluid">
           <div class="row">
-              <div class="col position-relative m-0">
-                <img src="images/background.jpg" alt="" class="img-fluid">
-                <div class="row text-md-center position-absolute top-0 start-50 translate-middle-x">
-                 <div class="col d-none d-md-block p-lg-5">
-                  <h1 class="text-secondary">SEE ART ~~ SEE POSSIBILITIES</h1>
-                  <p class="text-danger">Bringing different kinds of art and artists closer to you</p>
-                 </div>
+            <div class="col-md-12 text-center">
+              <h5>Do you Have anything You want us to improve on? Send us a message today</h5>
+              <h5>We would love to here your feedback</h5>
+            </div>
+            <div class="col-md-6 offset-md-3">
+              <form action="submit" class="form-control">
+                <h2 class="text-center text-info">Feedback form</h2>
+                <div>                  
+                    <label for="message" class="pt-3 pb-1 ps-3">Enter message here</label><br>
+                    <textarea name="contactus" id="contactus" class="form-control"></textarea>
                 </div>
-              </div>
+                <div>
+                    <label for="email" class="pt-3 pb-1 ps-3">Email, Incase we need to contact you</label><br>
+                    <input type="text" placeholder="email" class="form-control">
+                </div>
+                <div class="py-3">
+                    <button class="btn btn-success col-12" type="button">submit</button>
+                </div>
+            </form>
+            </div>
           </div>
 
           <div class="row footer">
@@ -66,7 +77,7 @@
               <p><a href="login.html" class="footerlinks">Login</a></p>
               <p><a href="login.html" class="footerlinks">Register</a></p>
               <p><a href="#" class="footerlinks d-none d-sm-block">FAQs</a></p>
-              <p><a href="#" class="footerlinks">About us</a></p>
+              <p><a href="about.html" class="footerlinks">About us</a></p>
             </div>
             <div class="col-sm-3 ps-md-5">
               <h4>Others</h4>
@@ -78,7 +89,7 @@
             <div class="col-12">
               <div class="row d-none d-sm-block">
                 <div class="col-md-4 offset-md-8 text-end">
-                  <h4>Contact Us</h4>
+                  <h4>Our Socials</h4>
                   <a href="#" class="imglinks ps-2"> <img src="images/twitter.png" class="img-fluid"> </a>
                   <a href="#" class="imglinks ps-2"> <img src="images/telegram.png" class="img-fluid"> </a>
                   <a href="#" class="imglinks ps-2"> <img src="images/linkedin.png" class="img-fluid"> </a>
